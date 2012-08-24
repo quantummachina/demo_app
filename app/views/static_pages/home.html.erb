@@ -1,0 +1,14 @@
+<h1>Rayuela 69</h1>
+<h3>Esta es una sencilla aplicación inspirada en el capítulo 69 de Rayuela de Julio Cortázar.</h3>
+<h3>Homenaje a un gran escritor y ludolinguista.</h3>
+<hr>
+<p>Instrucciones: teclea en el recuadro un texto,</p>
+<p>Al presionar el botón de "cambiar" obtendrás</p>
+<p>el texto cambiado al estilo del capítulo.</p>
+<%= form_tag root_path do %>
+<%= text_area_tag :texto, nil, placeholder: 'Escribe el texto original que deseas cambiar', rows:5, cols: 50 %>
+<%= submit_tag 'Cambiar'%>
+<% end %>
+<hr>
+<h3>Resultado</h3>
+<p><%=@texto69%></p>
