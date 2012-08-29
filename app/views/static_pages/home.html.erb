@@ -8,15 +8,13 @@
 	<%= text_area_tag :texto, nil, placeholder: 'Escribe el texto original que deseas cambiar', size: '50x5'%>
 	<%= submit_tag 'Cambiar'%>
 <% end %>
-<hr>
 <h3>Resultado</h3>
 <%= text_area_tag :txt, @texto69, size: '50x5'%>
-<hr>
-<h4>Contacto: </h4><%= mail_to 'electrojazz@gmail.com', 'email'%> 
 <br>
-<h4>Otros sitios: </h4><%= link_to 'soyasne', 'http://soyasne.blogspot.com'%> | <%= link_to 'beatles can kiss my ass', 'http://www.beatlescankissmyass.blogspot.com' %> | <%=link_to 'Quantum Machina','http://www.quantummachina.com' %>
+<p><b>Contacto: </b><%= mail_to 'electrojazz@gmail.com', 'email'%></p>
+<p><b>Otros sitios: </b><%= link_to 'soyasne', 'http://soyasne.blogspot.com'%> | <%= link_to 'beatles can kiss my ass', 'http://www.beatlescankissmyass.blogspot.com' %> | <%=link_to 'Quantum Machina','http://www.quantummachina.com' %></p>
 <hr>
-<h3>Comentarios</h3>
+<h4>Comentarios</h4>
 <%= form_for @comment do  |f| %>
 	<%= f.text_area :t, placeholder: 'Deja un comentario', rows: 3 %>
 	<%= f.submit %>
