@@ -5,12 +5,12 @@
 <p>Instrucciones: teclea en el recuadro un texto,</p>
 <p>Al presionar el botón de "cambiar" obtendrás el texto cambiado al estilo del capítulo.</p>
 <%= form_tag root_path do %>
-	<%= text_area_tag :texto, nil, placeholder: 'Escribe el texto original que deseas cambiar', size: '25x5'%>
+	<%= text_area_tag :texto, nil, placeholder: 'Escribe el texto original que deseas cambiar', size: '50x5'%>
 	<%= submit_tag 'Cambiar'%>
 <% end %>
 <hr>
 <h3>Resultado</h3>
-<%= text_area_tag :txt, @texto69, size: '25x5'%>
+<%= text_area_tag :txt, @texto69, size: '50x5'%>
 <hr>
 <h4>Contacto: </h4><%= mail_to 'electrojazz@gmail.com', 'email'%> 
 <br>
