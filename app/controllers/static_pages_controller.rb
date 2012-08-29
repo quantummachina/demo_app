@@ -3,6 +3,7 @@ class StaticPagesController < ApplicationController
   def home
   	t = params[:texto] || ""
   	@texto69 = do69(t)
+  	@comment = Comment.new
   end
 
  private

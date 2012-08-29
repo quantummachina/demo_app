@@ -1,4 +1,6 @@
 Rayuela69::Application.routes.draw do
+  resources :comments
+
   get "static_pages/home"
 
   root to: 'static_pages#home'
