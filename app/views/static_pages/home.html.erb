@@ -17,7 +17,7 @@
 <h4>Comentarios</h4>
 <%= form_for @comment do  |f| %>
 	<%= f.text_area :t, placeholder: 'Deja un comentario', rows: 3 %>
-	<%= f.submit %>
+	<%= f.submit 'Publicar Comentario' %>
 <%end%>
 <br>
 <% Comment.all.each do |c| %>
