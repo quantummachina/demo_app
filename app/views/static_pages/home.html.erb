@@ -2,7 +2,7 @@
 <h3>Ésta es una sencilla aplicación inspirada en el <%= link_to 'capítulo 69', 'http://ciaoverona.blogspot.mx/2008/05/rayuela-captulo-69.html'%> de <%= link_to 'Rayuela', 'http://es.wikipedia.org/wiki/Rayuela_(novela)'%> de <%= link_to 'Julio Cortázar', 'http://es.wikipedia.org/wiki/Julio_Cort%C3%A1zar'%>.</h3>
 <h3>Homenaje a un gran escritor y ludolinguista.</h3>
 <hr>
-<p>Instrucciones: teclea en el recuadro un texto,</p>
+<p>Instrucciones: teclea en el recuadro un texto.</p>
 <p>Al presionar el botón de "cambiar" obtendrás el texto cambiado al estilo del capítulo.</p>
 <%= form_tag root_path do %>
 	<%= text_area_tag :texto, nil, placeholder: 'Escribe el texto original que deseas cambiar', size: '50x5'%>
